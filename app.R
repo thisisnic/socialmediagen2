@@ -13,7 +13,7 @@ ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(
       textInput("github_link", "GitHub Markdown Link"),
-      textInput("password", "Password"),
+      passwordInput("password", "Password"),
       checkboxGroupInput(
         "platforms",
         "Select Platforms",
