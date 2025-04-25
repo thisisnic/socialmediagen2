@@ -13,6 +13,7 @@ ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(
       textInput("github_link", "GitHub Markdown Link"),
+      textInput("password", "Password"),
       checkboxGroupInput(
         "platforms",
         "Select Platforms",
@@ -42,16 +43,20 @@ ui <- fluidPage(
 
 server <- function(input, output) {
   output_text <- eventReactive(input$generate, {
-    prompt <- get_prompt(
-      input$github_link,
-      input$platforms,
-      input$n_gen,
-      input$emojis,
-      input$tone,
-      input$hashtags
-    )
-
-    call_llm_api(prompt)
+    
+    # Important to make sure it's set or else it'll match input$password to "" and proceed!
+    if(Sys.getenv("APP_PWD") != "" && identical(input$password, Sys.getenv("APP_PWD"))){
+      prompt <- get_prompt(
+        input$github_link,
+        input$platforms,
+        input$n_gen,
+        input$emojis,
+        input$tone,
+        input$hashtags
+      )
+      call_llm_api(prompt)
+    }
+    
   })
 
   output$output_posts <- renderText({
