@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+body {
+    font-family: 'Space Mono', monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+
+label, input, textarea, select, button {
+    font-family: 'Space Mono', monospace;
+}
+
+.well {
+  background-color: #d7dcfd;
+}
+
+.container-fluid {
+  background-color: #fff9d1;
+}
+
+.col-sm-8 {
+  background-color: #c6f4ea;
+}
+
+.shiny-text-output {
+      white-space: pre-wrap; /* Preserve newlines and allow wrapping */
+      word-wrap: break-word; /* Wrap long words if necessary */
+      overflow-wrap: break-word;
+}
