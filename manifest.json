@@ -592,6 +592,34 @@
         "Archs": "x64"
       }
     },
+    "httr": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "httr",
+        "Title": "Tools for Working with URLs and HTTP",
+        "Version": "1.4.7",
+        "Authors@R": "c(\n    person(\"Hadley\", \"Wickham\", , \"hadley@posit.co\", role = c(\"aut\", \"cre\")),\n    person(\"Posit, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "Useful tools for working with HTTP organised by HTTP verbs\n    (GET(), POST(), etc). Configuration functions make it easy to control\n    additional request components (authenticate(), add_headers() and so\n    on).",
+        "License": "MIT + file LICENSE",
+        "URL": "https://httr.r-lib.org/, https://github.com/r-lib/httr",
+        "BugReports": "https://github.com/r-lib/httr/issues",
+        "Depends": "R (>= 3.5)",
+        "Imports": "curl (>= 5.0.2), jsonlite, mime, openssl (>= 0.8), R6",
+        "Suggests": "covr, httpuv, jpeg, knitr, png, readr, rmarkdown, testthat\n(>= 0.8.0), xml2",
+        "VignetteBuilder": "knitr",
+        "Config/Needs/website": "tidyverse/tidytemplate",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.2.3",
+        "NeedsCompilation": "no",
+        "Packaged": "2023-08-15 02:56:56 UTC; hadleywickham",
+        "Author": "Hadley Wickham [aut, cre],\n  Posit, PBC [cph, fnd]",
+        "Maintainer": "Hadley Wickham <hadley@posit.co>",
+        "Repository": "CRAN",
+        "Date/Publication": "2023-08-15 09:00:02 UTC",
+        "Built": "R 4.4.3; ; 2025-03-13 02:49:09 UTC; windows"
+      }
+    },
     "httr2": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -1135,11 +1163,35 @@
     }
   },
   "files": {
+    ".Rbuildignore": {
+      "checksum": "7f3003188f3a78fd085feca239edcc60"
+    },
     "app.R": {
-      "checksum": "c1a7bf3356b3d289592dbb8f11ed9018"
+      "checksum": "914305473663d310ee1b69f5b8183e10"
+    },
+    "preview.png": {
+      "checksum": "35b38a107a6b245b433e50b470459025"
     },
     "prompts.R": {
-      "checksum": "d43840ea2bceb33fb703529c4f4be04b"
+      "checksum": "2301ac5ffc9f18cf49a617a9dbfafc35"
+    },
+    "prompts/prompt-bluesky.md": {
+      "checksum": "5299f5400d69116ad384d13c326a63a4"
+    },
+    "prompts/prompt-linkedin.md": {
+      "checksum": "aa2056f25e17b611deb9767c667d88ee"
+    },
+    "prompts/prompt-main.md": {
+      "checksum": "908a8141d50891ce3f3c13e05dd5e719"
+    },
+    "prompts/prompt-mastodon.md": {
+      "checksum": "f93fa8d2a246139cdcf001bfdbed4440"
+    },
+    "README.md": {
+      "checksum": "23d84b815499305cafc2203d1fdf0333"
+    },
+    "styles.css": {
+      "checksum": "e99bce1c87123f2a523a275919f8201c"
     }
   },
   "users": null
